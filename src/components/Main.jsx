@@ -51,7 +51,7 @@ function Main({ account, logIn, connect, getRecord, profile, loaded }) {
           fontSize={["5vw", "3vw", "1.7vw"]}
           boxShadow={"rgba(149, 157, 165, 0.1) 0px 8px 24px"}
         >
-          A profile 100% owned by you
+          A profile 100% owned by you and Ghost
         </Text>
         <Heading
           color="#000"
