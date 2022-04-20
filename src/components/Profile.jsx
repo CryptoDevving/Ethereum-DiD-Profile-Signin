@@ -19,6 +19,7 @@ import {
 function Profile({ updateProfile, profile, localDid }) {
   const [bio, setBio] = useState("");
   const [name, setName] = useState("");
+  const [Job, setJob] = useState("");
   const [checker, setChecker] = useState(false);
 
   return (
@@ -41,7 +42,7 @@ function Profile({ updateProfile, profile, localDid }) {
           onClick={() => {
             !bio && setBio(profile.bio);
             !name && setName(profile.name);
-            updateProfile(bio, name, setChecker);
+            updateProfile(bio, name, Job setChecker);
           }}
         >
           {checker && <Spinner mr={4} />}
@@ -107,10 +108,10 @@ function Profile({ updateProfile, profile, localDid }) {
               <Input
                 fontFamily="Inter"
                 type="text"
-                placeholder={profile.name ? profile.name : "Ghost"}
+                placeholder={profile.Job ? profile.Job : "Ghost"}
                 focusBorderColor="green.700"
                 rounded="md"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setJob(e.target.value)}
                 value={job}
               />
             </InputGroup>
