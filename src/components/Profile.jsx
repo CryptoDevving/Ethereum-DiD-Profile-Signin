@@ -74,7 +74,7 @@ function Profile({ updateProfile, profile, localDid }) {
               <Input
                 fontFamily="Inter"
                 type="text"
-                placeholder={profile.name ? profile.name : "Anonymous"}
+                placeholder={profile.name ? profile.name : "Ghost"}
                 focusBorderColor="gray.700"
                 rounded="md"
                 onChange={(e) => setName(e.target.value)}
@@ -89,7 +89,7 @@ function Profile({ updateProfile, profile, localDid }) {
               fontWeight="md"
               color={useColorModeValue("gray.700", "gray.50")}
             >
-              Bio
+              Life Story
             </FormLabel>
             <InputGroup size="sm">
               <Textarea
@@ -100,6 +100,18 @@ function Profile({ updateProfile, profile, localDid }) {
                 rounded="md"
                 onChange={(e) => setBio(e.target.value)}
                 value={bio}
+              />
+               Job
+            </FormLabel>
+            <InputGroup size="sm">
+              <Input
+                fontFamily="Inter"
+                type="text"
+                placeholder={profile.name ? profile.name : "Ghost"}
+                focusBorderColor="green.700"
+                rounded="md"
+                onChange={(e) => setName(e.target.value)}
+                value={job}
               />
             </InputGroup>
           </FormControl>
